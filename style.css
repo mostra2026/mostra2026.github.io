@@ -13,6 +13,11 @@ h1{
 h2{
     color: rgba(236, 231, 231, 0.856);
 }
+
 a{
     color: rgba(58, 57, 133, 0.856);
+}
+
+img{
+    border-radius: 15px;
 }
