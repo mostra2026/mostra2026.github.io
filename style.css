@@ -9,14 +9,20 @@ body{
 }
 p{
     color: rgb(218, 205, 205);
+    margin-left: 20px;
+    margin-right: 20px;
     
 }
     
 h1{
     color: rgb(218, 205, 205);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 h2{
     color: rgb(218, 205, 205);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 img{
@@ -46,6 +52,11 @@ img{
 
 .texto {
     min-width: 0;
+}
+
+.perfil .texto p {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (max-width: 600px) {
