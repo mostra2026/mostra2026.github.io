@@ -24,9 +24,47 @@ h2{
     margin-left: 20px;
     margin-right: 20px;
 }
+h3{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+strong{
+    color: white;
+    
+}
+
+.sobrepor{
+    color:white;
+}
 
 img{
     border-radius: 15px;
+}
+
+.galeria-inicial {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria-inicial figure {
+    flex: 0 0 140px;
+    width: 140px;
+    max-width: 140px;
+    margin: 0;
+    color: white;
+    text-align: left;
+}
+
+.galeria-inicial img {
+    display: block;
+    width: 140px;
+    height: 180px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .perfil {
@@ -60,6 +98,11 @@ img{
 }
 
 @media (max-width: 600px) {
+    .galeria-inicial figure {
+        width: min(100%, 140px);
+        max-width: 140px;
+    }
+
     .perfil img {
         width: min(230px, 100%);
         float: none;
