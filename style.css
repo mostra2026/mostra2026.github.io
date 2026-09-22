@@ -1,73 +1,59 @@
 @charset "UTF-8";
 
-body {
+body{
     min-height: 100vh;
     margin: 0;
     background-color: rgb(21, 21, 22);
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
 }
-
-
-
-p {
+p{
     color: rgb(218, 205, 205);
     margin-left: 20px;
     margin-right: 20px;
-    line-height: 1.6;
+    
 }
-
-h1 {
-    color: white;
-    margin: 30px 20px;
-}
-
-h2 {
+    
+h1{
     color: rgb(218, 205, 205);
     margin-left: 20px;
     margin-right: 20px;
 }
-
-h3 {
+h2{
+    color: rgb(218, 205, 205);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h3{
     color: white;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 35px;
-    border-left: 4px solid rgb(55, 73, 180);
-    padding-left: 10px;
 }
 
-strong {
+strong{
     color: white;
+    
 }
 
-.sobrepor {
-    color: white;
+.sobrepor{
+    color:white;
 }
 
-
-
-
-img {
+img{
     border-radius: 15px;
 }
-
-figcaption {
-    Color: white;
-
-}
-
 
 .galeria-inicial {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     padding: 20px;
 }
 
 .galeria-inicial figure {
-    width: 160px;
+    flex: 0 0 140px;
+    width: 140px;
+    max-width: 140px;
     margin: 0;
     color: white;
     text-align: left;
@@ -75,23 +61,15 @@ figcaption {
 
 .galeria-inicial img {
     display: block;
-    width: 160px;
-    height: 200px;
+    width: 140px;
+    height: 180px;
+    max-width: 100%;
     object-fit: cover;
-    margin-bottom: 8px;
 }
-
-.galeria-inicial figcaption {
-    font-weight: bold;
-    text-align: left;
-}
-
-
-
 
 .perfil {
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -112,55 +90,27 @@ figcaption {
 
 .texto {
     min-width: 0;
-    text-align: left;
 }
 
 .perfil .texto p {
     margin-left: 0;
     margin-right: 0;
-    text-align: left;
 }
 
-.perfil .texto h3 {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: left;
+@media (max-width: 600px) {
+    .galeria-inicial figure {
+        width: min(100%, 140px);
+        max-width: 140px;
+    }
+
+    .perfil img {
+        width: min(230px, 100%);
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
-
-
-
-.barra-topo {
-    background-color: rgba(2, 10, 121, 0.466);
-    padding: 20px;
-    text-align: center;
-}
-
-.barra-topo a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
-.barra-topo a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.area-final {
-    width: 100%;
-    margin-top: auto;
-}
-
-.rodape-link {
-    color: white;
-    display: block;
-    margin: 20px 0;
-    text-align: center;
-}
 
 footer {
     width: 100%;
@@ -174,29 +124,28 @@ footer {
     box-sizing: border-box;
 }
 
+.area-final {
+    width: 100%;
+    margin-top: auto;
+}
 
+.rodape-link {
+    color: white;
+    display: block;
+    margin: 0 0 16px;
+    text-align: center;
+}
 
+   .barra-topo {
+    background-color: rgba(2, 10, 121, 0.466);
+    padding: 20px;
+    text-align: center;
+}
 
-@media (max-width: 600px) {
-
-    .galeria-inicial figure {
-        width: 140px;
-    }
-
-    .galeria-inicial img {
-        width: 140px;
-        height: 180px;
-    }
-
-    .perfil img {
-        width: min(230px, 100%);
-        float: none;
-        margin: 0 0 25px 0;
-        display: block;
-    }
-
-    .barra-topo a {
-        display: inline-block;
-        margin: 8px;
-    }
+.barra-topo a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    
 }

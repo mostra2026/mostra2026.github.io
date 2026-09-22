@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Educação Também é Ciência</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <nav class="barra-topo">
+    <a href="index.html">Início</a>
+    <a href="Maria.html">Maria Montessori</a>
+    <a href="Helena.html">Helena Antipoff</a>
+    <a href="Nisia.html">Nísia Floresta</a>
+    <a href="subtemas.html">Subtemas</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <main class="quiz-pagina">
+    <section class="quiz-card" id="quiz-card">
+      <div id="tela-inicial">
+        <p class="quiz-tag">Mostra do Conhecimento 2026</p>
+        <h1>Quiz: Educação Também é Ciência</h1>
+        <p>Teste seus conhecimentos sobre Nísia Floresta, Maria Montessori, Helena Antipoff e os conteúdos do projeto.</p>
+        <button class="quiz-btn" id="comecar">Começar quiz</button>
+      </div>
+
+      <div id="tela-quiz" class="escondido">
+        <div class="quiz-topo">
+          <span id="progresso">Pergunta 1 de 15</span>
+          <span id="placar">Acertos: 0</span>
+        </div>
+        <div class="barra-progresso"><div id="barra"></div></div>
+        <h2 id="pergunta"></h2>
+        <div id="alternativas" class="alternativas"></div>
+        <p id="feedback" class="feedback"></p>
+        <button class="quiz-btn escondido" id="proxima">Próxima pergunta</button>
+      </div>
+
+      <div id="tela-final" class="escondido">
+        <p class="quiz-tag">Resultado</p>
+        <h1 id="resultado"></h1>
+        <p id="mensagem-final"></p>
+        <button class="quiz-btn" id="reiniciar">Jogar novamente</button>
+        <a class="quiz-link" href="index.html">Voltar para o início</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
